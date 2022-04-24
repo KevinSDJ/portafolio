@@ -63,6 +63,19 @@ const Navbar = styled.div`
        }
     }
   };
+  @media (max-width:520px){
+    bottom:0 !important;
+    width:100%;
+    height:calc(10vh);
+    &>ol{
+       flex-direction: row;
+       width:70%;
+       justify-content:space-around;
+       &>li >a{
+         font-size: 1em;
+       }
+    }
+  };
   & > ol {
     list-style: none;
     padding: 0.5em;
