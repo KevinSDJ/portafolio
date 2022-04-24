@@ -86,7 +86,7 @@ const Content = styled.div`
      	&>p{
      		font-family:"Open Sans",sans.serif;
      		margin:0;
-     		width:300px !important;
+     		width:200px !important;
      	}
      }
    }

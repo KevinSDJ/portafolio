@@ -9,6 +9,7 @@ import env from 'react-dotenv'
 
 
 const MailSection= styled.div`
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap');
   width:80%;
   border:1px solid gray;
   display:flex;
@@ -18,6 +19,7 @@ const MailSection= styled.div`
   &>h1{
   	text-align:center;
   	letter-spacing:calc(1vw);
+  	font-family:"Roboto",sans-serif;
   };
 `
 const FooterSection= styled.footer`

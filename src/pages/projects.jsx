@@ -29,8 +29,8 @@ const Content=styled.div`
    .swiper-slide {
    	background-position: center;
    	background-size: cover;
-   	width:350px;
-   	height:450px;
+   	width:24em;
+   	height:34em;
    }
 `
 
