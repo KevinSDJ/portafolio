@@ -10,7 +10,7 @@ const Content=styled.div`
    border:1px solid gray;
    flex-direction:column;
    width:90%;
-   height:auto;
+   height:80vh;
    justify-content:center;
    align-items:center;
    &>h2{
@@ -21,17 +21,17 @@ const Content=styled.div`
    	letter-spacing:calc(1vw);
    };
    .swiper {
-   	width: 100%;
-    display:flex;
-    align-items:center;
+    width:100%;
+    height:auto;
    	padding-top: 50px;
    	padding-bottom: 50px;
    }
 
    .swiper-slide {
-    display:block;
-   	width:24em;
-   	height:34em;
+    box-sizing:border-box;
+    display:flex;
+   	width:calc(40vh);
+   	height:calc(40vh + 10vh);
    }
 `
 
