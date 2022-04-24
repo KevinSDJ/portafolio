@@ -56,7 +56,8 @@ const Content=styled.div`
      .swiper{
       width:100%;
       border-radius:0;
-      background-color:rgba(255, 251, 251, 0.1);
+      background-color:rgba(255, 251, 251, 0.3);
+      backdrop-filter: blur(5px);
      };
      .swiper-slide{
       overflow:hidden;
