@@ -80,7 +80,7 @@ const Content = styled.div`
      	font-family:"Open Sans",sans-serif;
       height:40px;
       overflow:auto;
-      font-size:18px;
+      font-size:14px;
      }
      &>span{
      	display:flex;
@@ -91,7 +91,7 @@ const Content = styled.div`
      		font-family:"Open Sans",sans.serif;
      		margin:0;
      		width:300px !important;
-        font-size:18px;
+        font-size:14px;
      	}
      }
    }
