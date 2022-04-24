@@ -55,8 +55,8 @@ const Content=styled.div`
       width:100%;
      };
      .swiper-slide{
-      width:300px;
-      height:400px;
+      width:270px;
+      height:370px;
      }
    }
 `
