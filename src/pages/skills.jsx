@@ -104,7 +104,7 @@ const Item= styled.button`
 			font-size:28px;
 		}
 		p{
-			font-size:17px;
+			font-size:14px;
 		}
 	};
     &>svg{

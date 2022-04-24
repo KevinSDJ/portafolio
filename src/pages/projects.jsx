@@ -43,6 +43,7 @@ const Content=styled.div`
       width:100%;
      };
      .swiper-slide{
+      overflow:hidden;
       width:calc(30vh);
       height:calc(30vh + 10vh);
      }
