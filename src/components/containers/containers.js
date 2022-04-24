@@ -33,19 +33,19 @@ let GridLayout= styled.div`
       align-items:flex-start;
       grid-template-columns: 1fr 1fr;
       grid-template-rows:1fr;
-    }
-    @media (max-width:1400px){
-      width:95%;
-      align-items:flex-start;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows:1fr;
-    }
+    };
     @media (max-width:1800px){
       width:95%;
       align-items:flex-start;
       grid-template-columns: 1fr 1fr;
       grid-template-rows:1fr;
-    }
+    };
+    @media (max-width:1400px){
+      width:95%;
+      align-items:flex-start;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows:1fr;
+    };
     @media (max-width:900px){
       width:100%;
       gap:40px;
@@ -56,7 +56,51 @@ let GridLayout= styled.div`
     font-size:calc(1vw);
     color:white;
 `
+let GridLayout2 = styled.div`
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap');
+diplay:grid;
+height:80%;
+display:grid;
+justify-items:center;
+backdrop-filter:blur(5px);
+@media (max-width:2400px){
+  width:95%;
+  align-items:center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows:1fr;
+};
+@media (max-width:1800px){
+  width:95%;
+  align-items:center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows:1fr;
+};
+@media (max-width:1400px){
+  width:100%;
+  gap:40px;
+  align-items:flex-end;
+  grid-template-columns: 1fr;
+  grid-template-rows:1fr 1fr;
+};
+@media (max-width:900px){
+  width:100%;
+  gap:40px;
+  align-items:flex-end;
+  grid-template-columns: 1fr;
+  grid-template-rows:1fr 1fr;
+}
+@media (max-width:570px){
+  width:100%;
+  gap:40px;
+  align-items:flex-end;
+  grid-template-columns: 1fr;
+  grid-template-rows:1fr 1fr;
+}
+font-family:"Open Sans",sans-serif;
+font-size:calc(1vw);
+color:white;
 
+`;
 const Content = styled.div`
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap');
   display:flex;
@@ -70,16 +114,31 @@ const Content = styled.div`
     font-family:"Open Sans",sans-serif;
     font-size:calc(1vw);
   };
-  &>h2{
+  h2{
     text-transform:uppercase;
     font-family:"Roboto",sans-serif;
-    font-size:calc(1.2vw);
+    font-size:calc(1.5vw);
     letter-spacing:calc(1vw);
   }
+  @media (max-width:1200px){
+    h2{
+      font-size:24px;
+    }
+	};
+	@media (max-width:900px){
+		h2{
+      font-size:24px;
+    }
+	};
+	@media (max-width:570px){
+	  h2{
+      font-size:24px;
+    }
+	};
 `
 
 
 
 
 
-export {Section,GridLayout,Content,FlexLayout};
+export {Section,GridLayout,Content,FlexLayout,GridLayout2};

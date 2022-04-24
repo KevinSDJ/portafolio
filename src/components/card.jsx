@@ -17,11 +17,11 @@ const Content = styled.div`
    background-size:cover;
    border-radius:1em;
    overflow:hidden;
-   &> #source_view_code{
+   #source_view_code{
    	  position:absolute;
-   	  right:30px;
+   	  left:5px;
    	  backdrop-filter:blur(10px);
-   	  &> #btngroups{
+   	  #btngroups{
    	  	display:flex;
    	  	font-family:"Open Sans",sans-serif;
         align-items:center;
@@ -39,6 +39,12 @@ const Content = styled.div`
           background-color:transparent;
           display:flex;
           align-items:center;
+          @media (max-width:900px){
+            font-size:18px
+           };
+           @media (max-width:570px){
+             font-size:14px; 
+           };
           a{
             color:#fff;
             display:flex;
@@ -49,7 +55,7 @@ const Content = styled.div`
             }
           }
         }
-   	  }
+   	  };
    }
 `
 

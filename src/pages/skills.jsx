@@ -67,8 +67,47 @@ const Item= styled.button`
     background-color:transparent;
     border-radius:4px;
     cursor:pointer;
+	@media (max-width:2400px){
+		svg{
+			font-size:calc(3vw);
+		}
+		p{
+			font-size:20px;
+		}
+	};
+	@media (max-width:1800px){
+		svg{
+			font-size:calc(3vw);
+		}
+		p{
+			font-size:20px;
+		}
+	};
+	@media (max-width:1200px){
+		svg{
+			font-size:calc(3vw);
+		}
+		p{
+			font-size:20px;
+		}
+	};
+	@media (max-width:900px){
+		svg{
+			font-size:calc(6vw);
+		}
+		p{
+			font-size:20px;
+		}
+	};
+	@media (max-width:570px){
+		svg{
+			font-size:28px;
+		}
+		p{
+			font-size:17px;
+		}
+	};
     &>svg{
-    	font-size:calc(4vw);
     	&:hover{
     		color:${props=>props.color? props.color:"blue"};
     	}

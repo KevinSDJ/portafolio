@@ -7,7 +7,7 @@ const scene = new THREE.Scene({
 		                                           60,
 		                                           canva.current.clientWidth/canva.current.clientHeight,
 		                                           0.4,
-		                                           10000
+		                                           100
 		                                           );
 		const canvas=document.querySelector('.scene3d')
 		scene.add(camera);

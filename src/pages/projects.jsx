@@ -26,14 +26,38 @@ const Content=styled.div`
     height:auto;
    	padding-top: 50px;
    	padding-bottom: 50px;
-    background-color:rgba(255, 251, 251, 0.5);;
-   }
+    background-color:rgba(255, 251, 251, 0.4);;
+   };
 
    .swiper-slide {
     box-sizing:border-box;
     display:flex;
    	width:calc(40vh);
    	height:calc(40vh + 15vh);
+   };
+   @media (max-width:900px){
+    &>h2{
+      font-size:calc(3vw);
+    };
+     .swiper{
+      width:100%;
+     };
+     .swiper-slide{
+      width:calc(30vh);
+      height:calc(30vh + 10vh);
+     }
+   };
+   @media (max-width:570px){
+    &>h2{
+      font-size:calc(4vw);
+    };
+     .swiper{
+      width:100%;
+     };
+     .swiper-slide{
+      width:calc(20vh);
+      height:calc(20vh + 10vh);
+     }
    }
 `
 

@@ -1,12 +1,11 @@
 import { useRef, useEffect } from "react";
-import styled from 'styled-components';
 import { Canvas } from '@react-three/fiber'
 import Sphere from './script.jsx'
 import Electron from './reactcircle.jsx'
 
+
+
 export default function Escena() {
-	let canva= useRef()
-	
 	return (
 		<Canvas>
 		     <ambientLight />
