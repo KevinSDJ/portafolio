@@ -55,11 +55,12 @@ const Content = styled.div`
    	 display:flex;
    	 flex-direction:column;
      align-items:flex-start;
-   	 padding-left:5%;
+   	 padding:1em 0 1em 1em;
    	 width:100%;
    	 box-sizing:border-box;
-     height:40%;
+     height:50%;
      position:absolute;
+     justify-content:space-around;
      bottom:0;
      left:0;
      backdrop-filter:blur(10px);
@@ -67,6 +68,7 @@ const Content = styled.div`
      &>h2{
      	font-family:"Roboto",sans-serif;
      	margin-bottom:0;
+      font-size:1.2em;
      }
      &>button{
         font-family:"Open Sans",sans-serif;
@@ -78,15 +80,18 @@ const Content = styled.div`
      	font-family:"Open Sans",sans-serif;
       height:40px;
       overflow:auto;
+      font-size:1.2em;
      }
      &>span{
      	display:flex;
      	gap:0 5px;
+      flex-direction:column;
      	font-family:"Roboto",sans-serif;
      	&>p{
      		font-family:"Open Sans",sans.serif;
      		margin:0;
-     		width:200px !important;
+     		width:300px !important;
+        font-size:1.2em;
      	}
      }
    }
@@ -110,7 +115,7 @@ export default function Card({img,title,resume,code,preview,stack,version,status
 		    <h2>{title}</h2>
         {status&& <button>{status}</button>}
 		    <p>{resume}</p>
-		    <span><b>Stack</b>: <p>{stack.join(', ')}</p></span>
+		    <span><b>Stack</b><p>{stack.join(', ')}</p></span>
 		</div>
 	</Content>)
 }
