@@ -20,7 +20,7 @@ const Content = styled.div`
    #source_view_code{
       overflow:hidden;
    	  position:absolute;
-   	  left:5px;
+   	  left:0;
    	  backdrop-filter:blur(10px);
    	  #btngroups{
    	  	display:flex;
