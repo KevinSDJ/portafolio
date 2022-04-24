@@ -1,12 +1,11 @@
 import {useState,useRef} from 'react';
 import styled from 'styled-components';
-import {Section,GridLayout} from './../components/containers/containers.js'
+import {Section,GridLayout,FlexLayout} from './../components/containers/containers.js'
 import {RiChatSmile3Fill,RiSendPlaneFill} from 'react-icons/ri';
 import {BasisButton} from './../components/buttons/buttons.js'
 import {Form} from './../components/form.js'
+import {VITE_APP_SERVICE_ID,VITE_APP_TEMPLATE_ID,VITE_APP_PUBLIC_KEY} from './../data/env.js'
 import emailjs from '@emailjs/browser';
-import env from 'react-dotenv'
-
 
 const MailSection= styled.div`
  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap');
@@ -16,7 +15,8 @@ const MailSection= styled.div`
   flex-direction:column;
   justify-content:center;
   margin:0 auto;
-  &>h1{
+  h1{
+	text-transform: uppercase;
   	text-align:center;
   	letter-spacing:calc(1vw);
   	font-family:"Roboto",sans-serif;
@@ -24,6 +24,8 @@ const MailSection= styled.div`
 `
 const FooterSection= styled.footer`
   width:80%;
+  height:100px;
+  margin:0 auto;
   border:1px solid gray;
 `
 
@@ -45,7 +47,7 @@ export default function Contact(){
 
 	const handleSubmit=(e)=>{
 		e.preventDefault()
-		emailjs.sendForm(env.REACT_APP_SERVICE_ID,env.REACT_APP_TEMPLATE_ID,form.current,env.REACT_APP_PUBLIC_KEY)
+		emailjs.sendForm(VITE_APP_SERVICE_ID,VITE_APP_TEMPLATE_ID,form.current,VITE_APP_PUBLIC_KEY)
 		.then((result) => {
 			setData({name:"",issue:"",message:"",["reply_to"]:""})
 			console.log(result.text);
@@ -57,9 +59,9 @@ export default function Contact(){
 
 
 	return (<Section id="contact">
-	        <GridLayout columns={"1fr"} rows={"2fr 1fr"} >
+	        <FlexLayout columns={"1fr"} rows={"2fr 1fr"} >
 	        	<MailSection>
-	        	    <h1>let's talk <RiChatSmile3Fill/></h1>
+	        	   <h1>let's talk <RiChatSmile3Fill/></h1>
 	        	   <Form ref={form} onSubmit={handleSubmit}>
 	        	     <label htmlFor="name">Name
 	        	     <input id="name" type="text" name="name" onChange={handleChange} value={data.name} required/>
@@ -77,6 +79,6 @@ export default function Contact(){
 	        	   </Form>
 	        	</MailSection>
 	        	<FooterSection/>
-	        </GridLayout>
+	        </FlexLayout>
 	</Section>)
 }

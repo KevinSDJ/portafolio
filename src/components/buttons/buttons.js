@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 
 
-const BasisButton = styled.button`
+const BasisButton = styled.a`
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap');
   border: 2px solid ${props=>props.color? props.color:"#20f7f7"};
   color :white;
@@ -15,6 +15,7 @@ const BasisButton = styled.button`
   display:flex;
   align-items:center;
   gap:0 5px;
+  text-decoration:none;
   flex-direction:row;
   ${props=>props.margin?"margin:"+props.margin+ ";":null}
    &:hover,focus{

@@ -5,13 +5,14 @@ import {BasisButton} from './../components/buttons/buttons.js'
 import {FaFileDownload} from 'react-icons/fa'
 import gsap from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
+import pdf from './../data/kevin_De_Jesus_cv.pdf';
 gsap.registerPlugin(ScrollTrigger)
 
 
 
 const Content = styled.div`
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap');
-  &> h4,p,button{
+  &> h4,p,a{
     margin-left:calc(10vw)
   }
   width:100%;
@@ -34,7 +35,7 @@ const Content = styled.div`
     display:flex;
     flex-direction:row;
   }
-  &>button{
+  &>a{
     opacity:0
   }
 `;
@@ -111,7 +112,7 @@ export default function Initial() {
           <p ref={subt} >Full Stack Web Developer | Front End</p>
           <span>
              <BasisButton ref={btn}>contact me</BasisButton>
-             <BasisButton ref={btn2} color={"#bb3e03"} animateName={"pulse2"} >cv download <FaFileDownload style={{color:"#bb3e03"}}/></BasisButton>
+             <BasisButton ref={btn2} href={pdf} target="_blank" rel="noopener noreferrer" download="fullstack_developer_kevin_de_jesus_cv.pdf"   color={"#bb3e03"} animateName={"pulse2"} >cv download <FaFileDownload style={{color:"#bb3e03"}}/></BasisButton>
           </span>
       </Content>
     </Section>

@@ -15,7 +15,7 @@ const Content = styled.div`
    background-repeat:no-repeat;
    background-position:center;
    background-size:cover;
-   border-radius:2em;
+   border-radius:1em;
    overflow:hidden;
    &> #source_view_code{
    	  position:absolute;
@@ -66,11 +66,5 @@ export default function Card({img,title,resume,code,preview,stack,version,status
         <button><a href={code} target="_blank"><BiCode/></a></button>
         </span>
 	    </div>
-		<div id="data_proyect">
-		    <h2>{title}</h2>
-        {status&& <button>{status}</button>}
-		    <p>{resume}</p>
-		    <span><b>Stack</b><p>{stack.join(', ')}</p></span>
-		</div>
 	</Content>)
 }

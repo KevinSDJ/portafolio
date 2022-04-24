@@ -13,6 +13,18 @@ const Navbar = styled.div`
   display:flex;
   align-items:center;
   justify-content:center;
+  @media (max-width:2600px){
+    right:0;
+    height:100vh;
+    width:calc(10vw);
+    &>ol{
+      flex-direction: column;
+      gap: 1em;
+      &>li >a{
+        font-size: calc(2vw);
+      }
+    }
+ };
   @media (max-width:2000px){
      right:0;
      height:100vh;
@@ -25,18 +37,7 @@ const Navbar = styled.div`
        }
      }
   };
-  @media (max-width:1600px){
-     right:0;
-     height:100vh;
-     width:calc(10vw);
-     &>ol{
-       flex-direction: column;
-       gap: 1em;
-       &>li >a{
-         font-size: calc(2vw);
-       }
-     }
-  };
+  
   @media (max-width:1400px){
      right:0;
      height:100vh;
