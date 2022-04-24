@@ -10,7 +10,7 @@ const Content=styled.div`
    border:1px solid gray;
    flex-direction:column;
    width:90%;
-   height:90vh;
+   height:auto;
    justify-content:center;
    align-items:center;
    &>h2{
@@ -22,13 +22,14 @@ const Content=styled.div`
    };
    .swiper {
    	width: 100%;
+    display:flex;
+    align-items:center;
    	padding-top: 50px;
    	padding-bottom: 50px;
    }
 
    .swiper-slide {
-   	background-position: center;
-   	background-size: cover;
+    display:block;
    	width:24em;
    	height:34em;
    }
