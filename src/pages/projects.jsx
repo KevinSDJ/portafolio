@@ -55,6 +55,7 @@ const Content=styled.div`
       width:100%;
      };
      .swiper-slide{
+      overflow:hidden;
       width:270px;
       height:370px;
      }
