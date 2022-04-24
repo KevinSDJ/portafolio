@@ -90,7 +90,7 @@ const Content = styled.div`
      	&>p{
      		font-family:"Open Sans",sans.serif;
      		margin:0;
-     		width:300px !important;
+     		width:90% !important;
         font-size:14px;
      	}
      }
