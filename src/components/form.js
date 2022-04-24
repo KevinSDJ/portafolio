@@ -10,23 +10,21 @@ const Form = styled.form`
    flex-direction:column;
    align-items:center;
    gap:10px;
-   @media (max-width:700px){
-      &{
-         width:80%;
-      }
-   }
    @media (max-width:900px){
-      &{
-         width:60%;
-      }
-   }
+      width:90%;
+      
+   };
+   @media (max-width:570px){
+      width:100%;
+      
+   };
    &>label{
    	display:flex;
    	width:100%;
    	flex-direction:column;
    	gap:5px;
    };
-   &>button:hover{
+   &>a:hover{
    	svg{
    		transform:rotate(45deg);
    	}

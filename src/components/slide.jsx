@@ -1,12 +1,12 @@
 import React from "react";
-import SwiperCore, { EffectCoverflow, Pagination } from "swiper";
+import SwiperCore, { EffectCoverflow, Pagination,EffectFade} from "swiper";
 import Card from './card.jsx'
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import {dataProjects} from './../data/projects.js'
 import "swiper/css";
 import "swiper/css/bundle"
-SwiperCore.use([EffectCoverflow, Pagination]);
+SwiperCore.use([EffectCoverflow, Pagination,EffectFade]);
 
 
 
@@ -15,7 +15,7 @@ const SlideCards = () => {
     <>
       <Swiper
         effect={"coverflow"}
-        grabCursor={false}
+        grabCursor={true}
         centeredSlides={true}
         slidesPerView={"auto"}
         coverflowEffect={{

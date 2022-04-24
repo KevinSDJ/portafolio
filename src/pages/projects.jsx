@@ -9,7 +9,7 @@ const Content=styled.div`
    display:flex;
    border:1px solid gray;
    flex-direction:column;
-   width:90%;
+   width:100%;
    height:80vh;
    justify-content:center;
    align-items:center;
@@ -21,10 +21,12 @@ const Content=styled.div`
    	letter-spacing:calc(1vw);
    };
    .swiper {
-    width:100%;
+    border-radius:1em;
+    width:80%;
     height:auto;
    	padding-top: 50px;
    	padding-bottom: 50px;
+    background-color:rgba(255, 251, 251, 0.5);;
    }
 
    .swiper-slide {
