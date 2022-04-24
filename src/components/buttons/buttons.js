@@ -17,8 +17,10 @@ const BasisButton = styled.a`
   gap:0 5px;
   text-decoration:none;
   flex-direction:row;
-  ${props=>props.margin?"margin:"+props.margin+ ";":null}
-   &:hover,focus{
+  @media (max-width:900px){
+    font-size:calc(2.5vw);
+  }
+  &:hover,focus{
     cursor:pointer;
    	animation:${props=>props.animateName?props.animateName:"pulse"} 1s;
    	box-shadow: 0 0 0 2rem transparent;

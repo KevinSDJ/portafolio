@@ -37,6 +37,17 @@ const Content = styled.div`
   }
   &>a{
     opacity:0
+  };
+  @media (max-width:900px){
+    display:flex;
+    flex-direction:column;
+    gap:20% 0;
+    h4{
+      font-size:calc(4vw);
+    }
+    p{
+      font-size:calc(3vw);
+    }
   }
 `;
 
@@ -111,7 +122,7 @@ export default function Initial() {
           <h4 id="text" ref={text} >Hi I'm kevin <br /> A Web Developer</h4>
           <p ref={subt} >Full Stack Web Developer | Front End</p>
           <span>
-             <BasisButton ref={btn}>contact me</BasisButton>
+             <BasisButton ref={btn} href={"#contact"}>contact me</BasisButton>
              <BasisButton ref={btn2} href={pdf} target="_blank" rel="noopener noreferrer" download="fullstack_developer_kevin_de_jesus_cv.pdf"   color={"#bb3e03"} animateName={"pulse2"} >cv download <FaFileDownload style={{color:"#bb3e03"}}/></BasisButton>
           </span>
       </Content>
