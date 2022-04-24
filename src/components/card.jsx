@@ -18,6 +18,7 @@ const Content = styled.div`
    border-radius:1em;
    overflow:hidden;
    #source_view_code{
+      overflow:hidden;
    	  position:absolute;
    	  left:5px;
    	  backdrop-filter:blur(10px);
