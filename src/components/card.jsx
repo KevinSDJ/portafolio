@@ -59,7 +59,7 @@ const Content = styled.div`
    	  };
    }
 `
-const CardData= styled.div`
+let CardData= styled.div`
    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap');
    position:absolute;
    padding:0 10px;
@@ -68,11 +68,22 @@ const CardData= styled.div`
    width:100%;
    background-color:rgba(255,255,255,0.5);
    backdrop-filter:blur(5px);
+   button{
+     background-color: palegreen;
+     font-family:"Roboto",sans-serif;
+     border:none;
+   };
    h2{
-     font-size:"Roboto",sans-serif;
+     font-family:"Roboto",sans-serif;
    };
    p{
-    font-size:"Open Sans",sans-serif;
+    font-family:"Open Sans",sans-serif;
+    width:95%;
+    height: 60px;
+    overflow: auto;
+   };
+   span{
+    font-family:"Roboto",sans-serif;
    };
 `
 
@@ -92,7 +103,7 @@ export default function Card({img,title,resume,code,preview,stack,version,status
           <h2>{title}</h2>
           {status? <button>{status}</button>:null}
           <p>{resume}</p>
-          <span>Stack:</span>
+          <span><b>STACK:</b></span>
           <p>{stack.join(', ')}</p>
       </CardData>
 	</Content>)
