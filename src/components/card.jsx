@@ -85,6 +85,19 @@ let CardData= styled.div`
    span{
     font-family:"Roboto",sans-serif;
    };
+   @media (max-width:570px){
+     h2{
+       font-size:18px;
+     };
+     p{
+       font-size:14px;
+       height: 20px;
+       overflow: none;
+     };
+     span{
+      font-size:14px;
+     };
+   }
 `
 
 
