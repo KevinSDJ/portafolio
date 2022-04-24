@@ -68,7 +68,7 @@ const Content = styled.div`
      &>h2{
      	font-family:"Roboto",sans-serif;
      	margin-bottom:0;
-      font-size:1.2em;
+      font-size:20px;
      }
      &>button{
         font-family:"Open Sans",sans-serif;
@@ -80,7 +80,7 @@ const Content = styled.div`
      	font-family:"Open Sans",sans-serif;
       height:40px;
       overflow:auto;
-      font-size:1.2em;
+      font-size:18px;
      }
      &>span{
      	display:flex;
@@ -91,7 +91,7 @@ const Content = styled.div`
      		font-family:"Open Sans",sans.serif;
      		margin:0;
      		width:300px !important;
-        font-size:1.2em;
+        font-size:18px;
      	}
      }
    }
