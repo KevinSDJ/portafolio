@@ -62,8 +62,8 @@ const Content = styled.div`
 let CardData= styled.div`
    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap');
    position:absolute;
-   padding:0 10px;
    bottom:0;
+   padding:0 15px;
    height:50%;
    width:100%;
    background-color:rgba(255,255,255,0.5);
@@ -83,7 +83,18 @@ let CardData= styled.div`
     overflow: auto;
    };
    span{
-    font-family:"Roboto",sans-serif;
+     display:flex;
+     flex-direction: column;
+
+    &>b{
+      font-family:"Roboto",sans-serif;
+    };
+    &>p{
+      font-family:"Roboto",sans-serif;
+      overflow:none;
+      height: auto;
+      margin:0;
+    }
    };
    @media (max-width:570px){
      h2{
@@ -91,11 +102,16 @@ let CardData= styled.div`
      };
      p{
        font-size:14px;
-       height: 20px;
-       overflow: none;
+       height: 30px;
      };
      span{
-      font-size:14px;
+      &>b{
+        font-size:14px;
+      };
+      &>p{
+        font-size:14px;
+      }
+
      };
    }
 `
@@ -116,8 +132,9 @@ export default function Card({img,title,resume,code,preview,stack,version,status
           <h2>{title}</h2>
           {status? <button>{status}</button>:null}
           <p>{resume}</p>
-          <span><b>STACK:</b></span>
+          <span><b>STACK:</b>
           <p>{stack.join(', ')}</p>
+          </span>
       </CardData>
 	</Content>)
 }
