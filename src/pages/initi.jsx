@@ -35,7 +35,7 @@ const Content = styled.div`
     display:flex;
     flex-direction:row;
   }
-  &>a{
+  &>button{
     opacity:0
   };
   @media (max-width:900px){

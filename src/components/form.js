@@ -24,7 +24,7 @@ const Form = styled.form`
    	flex-direction:column;
    	gap:5px;
    };
-   &>a:hover{
+   &>button:hover{
    	svg{
    		transform:rotate(45deg);
    	}
