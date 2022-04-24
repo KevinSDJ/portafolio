@@ -26,7 +26,7 @@ const Content=styled.div`
     height:auto;
    	padding-top: 50px;
    	padding-bottom: 50px;
-    background-color:rgba(255, 251, 251, 0.4);;
+    background-color:rgba(255, 251, 251, 0.4);
    };
 
    .swiper-slide {
@@ -49,11 +49,14 @@ const Content=styled.div`
      }
    };
    @media (max-width:570px){
+     
     &>h2{
       font-size:calc(4vw);
     };
      .swiper{
       width:100%;
+      border-radius:0;
+      background-color:rgba(255, 251, 251, 0.1);
      };
      .swiper-slide{
       overflow:hidden;
