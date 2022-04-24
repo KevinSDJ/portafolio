@@ -72,7 +72,7 @@ const Navbar = styled.div`
        width:70%;
        justify-content:space-around;
        &>li >a{
-         font-size: 1em;
+         font-size: 1.2em;
        }
     }
   };
