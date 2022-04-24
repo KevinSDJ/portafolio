@@ -59,7 +59,22 @@ const Content = styled.div`
    	  };
    }
 `
-
+const CardData= styled.div`
+   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap');
+   position:absolute;
+   padding:0 10px;
+   bottom:0;
+   height:50%;
+   width:100%;
+   background-color:rgba(255,255,255,0.5);
+   backdrop-filter:blur(5px);
+   h2{
+     font-size:"Roboto",sans-serif;
+   };
+   p{
+    font-size:"Open Sans",sans-serif;
+   };
+`
 
 
 
@@ -68,10 +83,17 @@ export default function Card({img,title,resume,code,preview,stack,version,status
 	return (<Content img={img}>
 	    <div id="source_view_code">
 	      <span id="btngroups">
-        <span>v1</span>
+        <span>V{version}</span>
         <button><a href={preview} target="_blank" ><BsEyeFill/></a></button>
         <button><a href={code} target="_blank"><BiCode/></a></button>
         </span>
 	    </div>
+      <CardData>
+          <h2>{title}</h2>
+          {status? <button>{status}</button>:null}
+          <p>{resume}</p>
+          <span>Stack:</span>
+          <p>{stack.join(', ')}</p>
+      </CardData>
 	</Content>)
 }
