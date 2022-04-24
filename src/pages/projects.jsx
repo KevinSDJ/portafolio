@@ -31,7 +31,7 @@ const Content=styled.div`
     box-sizing:border-box;
     display:flex;
    	width:calc(40vh);
-   	height:calc(40vh + 10vh);
+   	height:calc(40vh + 15vh);
    }
 `
 
