@@ -24,7 +24,7 @@ export default function Electron (props){
 	          ref={current}
 	        >
 	        <sphereGeometry args={[0.2, 32, 24]} />
-	        <meshMatcapMaterial matcap={matcaps[props.icon]} color={"0xffff"} />
+	        <meshMatcapMaterial matcap={matcaps[props.icon]}  />
 	        </mesh>
 	        )
 

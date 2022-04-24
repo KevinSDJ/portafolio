@@ -71,10 +71,13 @@ let CardData= styled.div`
    button{
      background-color: palegreen;
      font-family:"Roboto",sans-serif;
+     color: #4e4d4d;
      border:none;
    };
    h2{
      font-family:"Roboto",sans-serif;
+     color: #4e4d4d;
+     margin-bottom: 0;
    };
    p{
     font-family:"Open Sans",sans-serif;
@@ -85,9 +88,9 @@ let CardData= styled.div`
    span{
      display:flex;
      flex-direction: column;
-
     &>b{
       font-family:"Roboto",sans-serif;
+      color: #4e4d4d;
     };
     &>p{
       font-family:"Roboto",sans-serif;
@@ -96,6 +99,42 @@ let CardData= styled.div`
       margin:0;
     }
    };
+   @media (max-width:1400px){
+    h2{
+      font-size:24px;
+    };
+    p{
+      font-size:17px;
+      height: 80px;
+    };
+    span{
+     &>b{
+       font-size:17px;
+     };
+     &>p{
+       font-size:17px;
+     }
+
+    };
+  };
+   @media (max-width:900px){
+    h2{
+      font-size:20px;
+    };
+    p{
+      font-size:14px;
+      height: 50px;
+    };
+    span{
+     &>b{
+       font-size:14px;
+     };
+     &>p{
+       font-size:14px;
+     }
+
+    };
+  };
    @media (max-width:570px){
      h2{
        font-size:18px;
