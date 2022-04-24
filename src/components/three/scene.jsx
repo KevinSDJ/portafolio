@@ -14,6 +14,7 @@ export default function Escena() {
 			<Electron position={[-2,0,0]} values={[-1,2,2]} op={["sin","sin","cos"]} icon={"react"}/>
 			<Electron position={[-1,0,0]} values={[2,1,1]} op={["cos","cos","sin"]} icon={"node"} />
 			<Electron position={[-2,-5,0]} values={[2,-1,-2]} op={["sin","cos","cos"]} icon={"html"} />
+			<Electron position={[-1.5,-4,0]} values={[-1.5,1,1.4]} op={["sin","cos","cos"]} icon={"css"} />
 		</Canvas>
 	);
 }

@@ -14,7 +14,7 @@ const BasisButton = styled.a`
   font-size:calc(1.2vw);
   display:flex;
   align-items:center;
-  gap:0 5px;
+  gap:0 10px;
   text-decoration:none;
   flex-direction:row;
   @media (max-width:900px){

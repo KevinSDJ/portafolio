@@ -64,7 +64,6 @@ export default function Initial() {
    gsap.to(text.current,{
     scrollTrigger:{
       trigger:text.current,
-      toggleActions:'play none none none'
     },
     x:0,
     duration:1,
@@ -79,11 +78,11 @@ export default function Initial() {
    gsap.to(btn.current,{
     scrollTrigger:{
       trigger:btn.current,
-      toggleActions:'play none none none'
     },
-    duration:1,
+    duration:2,
     y:0,
-    opacity:1
+    opacity:1,
+
    })
    gsap.from(subt.current,{
     x:-400,
@@ -96,16 +95,15 @@ export default function Initial() {
    gsap.to(btn2.current,{
     scrollTrigger:{
       trigger:btn.current,
-      toggleActions:'play none none none'
     },
-    duration:1,
+    duration:2,
     y:0,
-    opacity:1
+    opacity:1,
+
    })
    gsap.to(subt.current,{
     scrollTrigger:{
       trigger:btn.current,
-      toggleActions:'play none none none'
     },
     x:0,
     duration:1,
