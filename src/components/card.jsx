@@ -51,51 +51,6 @@ const Content = styled.div`
         }
    	  }
    }
-   &> #data_proyect{
-   	 display:flex;
-   	 flex-direction:column;
-     align-items:flex-start;
-   	 padding:1em 0 1em 1em;
-   	 width:100%;
-   	 box-sizing:border-box;
-     height:50%;
-     position:absolute;
-     justify-content:space-around;
-     bottom:0;
-     left:0;
-     backdrop-filter:blur(10px);
-     background-color:rgba(255,255,255,0.5);
-     &>h2{
-     	font-family:"Roboto",sans-serif;
-     	margin-bottom:0;
-      font-size:20px;
-     }
-     &>button{
-        font-family:"Open Sans",sans-serif;
-        border:none;
-        color:green;
-        background-color:palegreen;
-     }
-     &>p{
-     	font-family:"Open Sans",sans-serif;
-      height:40px;
-      overflow:auto;
-      font-size:14px;
-     }
-     &>span{
-     	display:flex;
-     	gap:0 5px;
-      flex-direction:column;
-     	font-family:"Roboto",sans-serif;
-     	&>p{
-     		font-family:"Open Sans",sans.serif;
-     		margin:0;
-     		width:90% !important;
-        font-size:14px;
-     	}
-     }
-   }
-
 `
 
 
