@@ -15,7 +15,6 @@ import 'react-toastify/dist/ReactToastify.css';
 const MailSection = styled.div`
  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap');
   width:80%;
-  border:1px solid gray;
   display:flex;
   flex-direction:column;
   justify-content:center;
@@ -200,8 +199,8 @@ const FooterSection = styled.footer`
 };
 @media (max-width:570px){
 	height:150px;
-	p{
-	 font-size: 14px;
+	&>p{
+	 font-size: 10px;
     };
     #perfilData{
 		width: 90%;	

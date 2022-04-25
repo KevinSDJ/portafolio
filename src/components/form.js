@@ -4,7 +4,6 @@ const Form = styled.form`
    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap');
    margin:0 auto;
    font-family:"Open Sans",sans-serif;
-   border:1px solid gray;
    width:40%;
    display:flex;
    flex-direction:column;
