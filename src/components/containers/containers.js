@@ -134,7 +134,7 @@ const Content = styled.div`
     word-wrap: break-word;
     font-family:"Open Sans",sans-serif;
      font-weight: 600;
-    font-size:calc(24px);
+    font-size:24px;
   };
 	};
   @media (max-width:1400px){
