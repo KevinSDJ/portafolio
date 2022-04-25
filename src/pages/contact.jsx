@@ -232,8 +232,14 @@ export default function Contact() {
 	const handleSubmit = async (e) => {
 		e.preventDefault()
 
-		let resp = await emailjs.sendForm(VITE_APP_SERVICE_ID, VITE_APP_TEMPLATE_ID, form.current, VITE_APP_PUBLIC_KEY)
-		alert(resp)
+		let resp = await  toast.promise(emailjs.sendForm(VITE_APP_SERVICE_ID, VITE_APP_TEMPLATE_ID, form.current, VITE_APP_PUBLIC_KEY),
+		{
+			pending: 'wait...',
+			success: 'message sent',
+			error: 'message not sent'
+		}
+		) 
+
 		setData({ name: "", issue: "", message: "", reply_to: "" })
 	}
 
