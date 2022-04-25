@@ -5,14 +5,14 @@ const scene = new THREE.Scene({
 		
 		const camera = new THREE.PerspectiveCamera(
 		                                           60,
-		                                           canva.current.clientWidth/canva.current.clientHeight,
+		                                           canvas.current.clientWidth/canvas.current.clientHeight,
 		                                           0.4,
 		                                           100
 		                                           );
 		const canvas=document.querySelector('.scene3d')
 		scene.add(camera);
 		const render = new THREE.WebGLRenderer({canvas});
-		render.setSize(canva.current.clientWidth,canva.current.clientHeight);
+		render.setSize(canvas.current.clientWidth,canvas.current.clientHeight);
 		camera.position.z = 400;
 		// add objects to scene
 		let electronShape = new THREE.SphereGeometry(20, 20, 20);
@@ -38,9 +38,9 @@ const scene = new THREE.Scene({
 
 		
 		function resize (){
-			camera.aspect=canva.current.clientWidth/canva.current.clientHeight;
+			camera.aspect=canvas.current.clientWidth/canvas.current.clientHeight;
 			camera.updateProjectionMatrix()
-			render.setSize(canva.current.clientWidth,canva.current.clientHeight);
+			render.setSize(canvas.current.clientWidth,canvas.current.clientHeight);
 			render.render(scene,camera)
 
 		}
@@ -69,9 +69,5 @@ const scene = new THREE.Scene({
 			
 		};
 		//animate()
-		render.render(scene,camera)
 		
-		return () => {
-			window.addEventListener('resize',resize,false);
-			document.getElementById("gridAbout").removeChild(render.domElement);
-		};
+		
