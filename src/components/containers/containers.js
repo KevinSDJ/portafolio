@@ -9,7 +9,6 @@ let Section = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items:center;
-  border:1px solid gray;
 `;
 const FlexLayout = styled.div`
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap');

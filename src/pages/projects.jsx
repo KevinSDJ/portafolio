@@ -7,7 +7,6 @@ import styled from 'styled-components';
 const Content=styled.div`
    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap');
    display:flex;
-   border:1px solid gray;
    flex-direction:column;
    width:100%;
    height:80vh;

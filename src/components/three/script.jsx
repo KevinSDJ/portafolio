@@ -1,4 +1,4 @@
-import React,{useRef,useState} from 'react'
+import React from 'react'
 
 
 export default function Sphere(props) {
@@ -11,7 +11,7 @@ export default function Sphere(props) {
       {...props}
        >
       <sphereGeometry args={[1, 8, 8]} />
-      <meshBasicMaterial wireframe={true} />
+      <meshBasicMaterial wireframe={true} opacity={0}  />
     </mesh>
   )
 }
