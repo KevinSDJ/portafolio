@@ -20,12 +20,12 @@ const Content=styled.div`
    	letter-spacing:calc(1vw);
    };
    .swiper {
-    border-radius:1em;
+    border-radius:4px;
     width:80%;
     height:auto;
    	padding-top: 50px;
    	padding-bottom: 50px;
-    background-color:rgba(255, 251, 251, 0.4);
+    background-color:rgba(255, 251, 251, 0.2);
    };
 
    .swiper-slide {
@@ -55,8 +55,7 @@ const Content=styled.div`
      .swiper{
       width:100%;
       border-radius:0;
-      background-color:rgba(255, 251, 251, 0.3);
-      backdrop-filter: blur(5px);
+     
      };
      .swiper-slide{
       overflow:hidden;

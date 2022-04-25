@@ -44,6 +44,7 @@ const MailSection = styled.div`
 	};
 `
 const FooterSection = styled.footer`
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap');
   width:100%;
   height:300px;
   margin:0 auto;
@@ -59,6 +60,16 @@ const FooterSection = styled.footer`
 	  height: auto;
 	  margin:0 auto;
 	  &>div{
+		  h3{
+			  font-family: "Roboto",sans-serif;
+		  };
+		  h2{
+			  font-family: "Roboto",sans-serif;
+			  text-decoration: underline;
+		  };
+		  p{
+			  font-family: "Open Sans",sans-serif;
+		  };
 		span{
 			display:flex;
 			gap:0 30px;
@@ -86,7 +97,7 @@ const FooterSection = styled.footer`
 				margin:5px 0;
 			}
 			h2{
-				font-size: 24px;
+				font-size: 20px;
 				margin:5px 0;
 			}
 			p{
@@ -117,7 +128,7 @@ const FooterSection = styled.footer`
 				margin:5px 0;
 			}
 			h2{
-				font-size: 24px;
+				font-size: 20px;
 				margin:5px 0;
 			}
 			p{

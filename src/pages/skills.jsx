@@ -64,12 +64,13 @@ const Item= styled.button`
     align-items:center;
     color:white;
     text-align:center ;
+	border:none;
     background-color:transparent;
     border-radius:4px;
     cursor:pointer;
 	@media (max-width:2400px){
 		svg{
-			font-size:calc(3vw);
+			font-size:calc(4vw);
 		}
 		p{
 			font-size:20px;
@@ -132,13 +133,13 @@ export default function Skills() {
 		   <Content>
 		   	<h2>technical skills</h2>
 		   	<ItemsCont>
-		   		{technicalSkills.map((e,i)=><Item key={e.name+i} color={e.color} >{e.icon}<p>{e.name}</p></Item>)}
+		   		{technicalSkills.map((e,i)=><Item key={e.name+i} className="techsk" color={e.color} >{e.icon}<p>{e.name}</p></Item>)}
 		   	</ItemsCont>
 		   </Content>
 		   <Content>
 		    <h2>soft skills</h2>
 		    <ItemsCont>
-		      {softSkills.map((e,i)=><Item key={e+i}><p>{e}</p></Item>)}
+		      {softSkills.map((e,i)=><Item key={e+i}><p>⚡{e}</p></Item>)}
 		    </ItemsCont>
 		   </Content>
 		  </GridLayout>

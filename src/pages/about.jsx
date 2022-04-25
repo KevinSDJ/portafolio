@@ -6,7 +6,7 @@ export default function About() {
   return(<Section id="about">
     <GridLayout2>
       <Content>
-        <h2>About Me</h2>
+        <h2>About Me 👋</h2>
         <p>Hsdasd sadsadsad sads sdad ssd d dsadsadsasds sdsa sdadsd
          dsad sdsad adsdasd sadsadsad dsads s dsadsad
          </p>

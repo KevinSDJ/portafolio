@@ -9,6 +9,7 @@ let Section = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items:center;
+  backdrop-filter: blur(5px);
 `;
 const FlexLayout = styled.div`
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap');
