@@ -118,23 +118,21 @@ const Content = styled.div`
   &>p{
     width:60%;
     font-family:"Open Sans",sans-serif;
-    font-size:calc(1vw);
   };
   h2{
     text-transform:uppercase;
     font-family:"Roboto",sans-serif;
-    font-size:calc(1.5vw);
     letter-spacing:calc(1vw);
   }
   @media (max-width:2400px){
     h2{
-      font-size:30px;
+      font-size:28px;
     };
     &>p{
     word-wrap: break-word;
     font-family:"Open Sans",sans-serif;
      font-weight: 600;
-    font-size:24px;
+    font-size:20px;
   };
 	};
   @media (max-width:1400px){
@@ -144,7 +142,7 @@ const Content = styled.div`
     &>p{
     word-wrap: break-word;
     font-family:"Open Sans",sans-serif;
-    font-size:26px;
+    font-size:20px;
   };
 	};
   @media (max-width:1200px){
@@ -154,7 +152,7 @@ const Content = styled.div`
     &>p{
     word-wrap: break-word;
     font-family:"Open Sans",sans-serif;
-    font-size:26px;
+    font-size:18px;
   };
 	};
 	@media (max-width:900px){
@@ -169,7 +167,7 @@ const Content = styled.div`
 	};
 	@media (max-width:570px){
 	  h2{
-      font-size:20px;
+      font-size:18px;
     };
     &>p{
     word-wrap: break-word;
