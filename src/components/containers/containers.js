@@ -10,6 +10,7 @@ let Section = styled.section`
   justify-content: center;
   align-items:center;
   backdrop-filter: blur(5px);
+  border: 1px solid gray;
 `;
 const FlexLayout = styled.div`
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap');
@@ -67,12 +68,10 @@ let GridLayout2 = styled.div`
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap');
 display:grid;
 height:80%;
-display:grid;
 justify-items:center;
-backdrop-filter:blur(5px);
 font-family:"Open Sans",sans-serif;
-font-size:calc(1vw);
 color:white;
+border:1px solid gray;
 @media (max-width:2400px){
   width:95%;
   align-items:center;
@@ -111,12 +110,10 @@ const Content = styled.div`
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap');
   display:flex;
   flex-direction:column;
-  gap:${props=>props.gap?props.gap:"calc(1vh)"};
   justify-content:center;
   align-items:center;
-  ${props=>props?{...props}:null};
   &>p{
-    width:60%;
+    width:70%;
     font-family:"Open Sans",sans-serif;
   };
   h2{
@@ -127,19 +124,19 @@ const Content = styled.div`
   @media (max-width:2400px){
     h2{
       font-size:28px;
-    };
-    &>p{
+    }
+    p{
     word-wrap: break-word;
     font-family:"Open Sans",sans-serif;
      font-weight: 600;
-    font-size:20px;
+    font-size:calc(20px);
   };
 	};
   @media (max-width:1400px){
     h2{
       font-size:28px;
     };
-    &>p{
+    p{
     word-wrap: break-word;
     font-family:"Open Sans",sans-serif;
     font-size:20px;

@@ -10,7 +10,6 @@ const Form = styled.form`
    align-items:center;
    gap:10px;
    label{
-      
       input:focus{
         outline: none;
         background-color:rgb(180, 210, 238);
@@ -21,7 +20,6 @@ const Form = styled.form`
       }
    }
    @media (max-width:2400px){
-   
       label{
          font-size:20px;
          input{
