@@ -65,7 +65,8 @@ const Navbar = styled.div`
   @media (max-width:520px){
     bottom:0 !important;
     width:100%;
-    height:calc(10vh);
+    height:calc(5vh);
+    backdrop-filter: blur(5px);
     &>ol{
        flex-direction: row;
        width:70%;
