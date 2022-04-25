@@ -84,7 +84,7 @@ const FooterSection = styled.footer`
 	
 };
 @media (max-width:570px){
-	height:200px;
+	height:150px;
 	&>p{
 	 font-size: 14px;
     };
@@ -92,11 +92,10 @@ const FooterSection = styled.footer`
 		width: 90%;	
 		&>div{
 			h3{
-				font-size: 14px;
+				font-size: 10px;
 			}
 			h2{
-				font-size: 14px;
-				margin:2px 0;
+				font-size: 10px;
 			}
 			p{
 				font-size:10px;
