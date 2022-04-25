@@ -15,7 +15,7 @@ const SlideCards = () => {
     <>
       <Swiper
         effect={"coverflow"}
-        grabCursor={true}
+        grabCursor={false}
         centeredSlides={true}
         slidesPerView={"auto"}
         coverflowEffect={{

@@ -24,7 +24,6 @@ export default function About() {
          dsad sdsad adsdasd sadsadsad dsads s dsadsad
          </p>
       </Content>
-      <Escena/>
     </GridLayout2>
   </Section>)
 }

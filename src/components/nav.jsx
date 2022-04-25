@@ -7,7 +7,6 @@ import { BsBriefcase } from "react-icons/bs";
 import gsap from 'gsap'
 const Navbar = styled.div`
   box-sizing:border-box;
-  border:1px solid gray;
   position: fixed;
   z-index:4;
   display:flex;
@@ -91,7 +90,7 @@ const Navbar = styled.div`
 
   }
   
-`;
+`
 
 export default function Nav() {
   let nav= useRef()

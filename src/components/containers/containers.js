@@ -58,11 +58,14 @@ let GridLayout= styled.div`
 `
 let GridLayout2 = styled.div`
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap');
-diplay:grid;
+display:grid;
 height:80%;
 display:grid;
 justify-items:center;
 backdrop-filter:blur(5px);
+font-family:"Open Sans",sans-serif;
+font-size:calc(1vw);
+color:white;
 @media (max-width:2400px){
   width:95%;
   align-items:center;
@@ -96,10 +99,6 @@ backdrop-filter:blur(5px);
   grid-template-columns: 1fr;
   grid-template-rows:1fr 1fr;
 }
-font-family:"Open Sans",sans-serif;
-font-size:calc(1vw);
-color:white;
-
 `;
 const Content = styled.div`
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap');
@@ -120,20 +119,45 @@ const Content = styled.div`
     font-size:calc(1.5vw);
     letter-spacing:calc(1vw);
   }
+  @media (max-width:1400px){
+    h2{
+      font-size:28px;
+    };
+    &>p{
+    word-wrap: break-word;
+    font-family:"Open Sans",sans-serif;
+    font-size:calc(26px);
+  };
+	};
   @media (max-width:1200px){
     h2{
       font-size:24px;
-    }
+    };
+    &>p{
+    word-wrap: break-word;
+    font-family:"Open Sans",sans-serif;
+    font-size:calc(26px);
+  };
 	};
 	@media (max-width:900px){
 		h2{
-      font-size:24px;
-    }
+      font-size:20px;
+    };
+    &>p{
+    word-wrap: break-word;
+    font-family:"Open Sans",sans-serif;
+    font-size:calc(20px);
+  };
 	};
 	@media (max-width:570px){
 	  h2{
       font-size:24px;
-    }
+    };
+    &>p{
+    word-wrap: break-word;
+    font-family:"Open Sans",sans-serif;
+    font-size:calc(18px);
+  };
 	};
 `
 

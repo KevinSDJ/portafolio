@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import {BsEyeFill} from 'react-icons/bs';
 import {BiCode} from 'react-icons/bi';
+import gsap from 'gsap';
 
 
 
@@ -63,8 +64,9 @@ let CardData= styled.div`
    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap');
    position:absolute;
    bottom:0;
-   padding:0 15px;
-   height:50%;
+   padding:20px 15px;
+   height:auto;
+   opacity:0;
    width:100%;
    background-color:rgba(255,255,255,0.5);
    backdrop-filter:blur(5px);
@@ -77,7 +79,7 @@ let CardData= styled.div`
    h2{
      font-family:"Roboto",sans-serif;
      color: #4e4d4d;
-     margin-bottom: 0;
+     margin: 0;
    };
    p{
     font-family:"Open Sans",sans-serif;
@@ -159,7 +161,32 @@ let CardData= styled.div`
 
 
 export default function Card({img,title,resume,code,preview,stack,version,status}){
-	return (<Content img={img}>
+  let cardata= React.useRef()
+  let card= React.useRef()
+  
+  React.useLayoutEffect(()=>{
+    gsap.to(cardata.current,{
+      y:400,
+      opacity:0,
+    })
+    card.current.addEventListener("mouseenter", () =>{
+      gsap.to(cardata.current,{
+        y:0,
+        opacity: 1,
+        duration:1,
+        ease:'linear'
+      })
+    });
+    card.current.addEventListener("mouseleave", () => {
+      gsap.to(cardata.current,{
+        y:400,
+        opacity:0.5,
+        duration:1,
+        ease:'linear'
+      })
+    });
+  },[])
+	return (<Content img={img} ref={card}>
 	    <div id="source_view_code">
 	      <span id="btngroups">
         <span>V{version}</span>
@@ -167,7 +194,7 @@ export default function Card({img,title,resume,code,preview,stack,version,status
         <button><a href={code} target="_blank"><BiCode/></a></button>
         </span>
 	    </div>
-      <CardData>
+      <CardData ref={cardata}>
           <h2>{title}</h2>
           {status? <button>{status}</button>:null}
           <p>{resume}</p>
