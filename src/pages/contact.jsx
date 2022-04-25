@@ -85,7 +85,7 @@ const FooterSection = styled.footer`
 };
 @media (max-width:570px){
 	height:150px;
-	&>p{
+	p{
 	 font-size: 14px;
     };
     #perfilData{
