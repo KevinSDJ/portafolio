@@ -61,7 +61,7 @@ const FooterSection = styled.footer`
 	  &>div{
 		span{
 			display:flex;
-			gap:0 10px;
+			gap:0 30px;
 				a{
 					text-decoration: none;
 					color:white;
@@ -97,7 +97,6 @@ const FooterSection = styled.footer`
 			}
 			p{
 				font-size:10px;
-				margin:2px 0;
 			}
 			span{
 				a{
