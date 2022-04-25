@@ -88,14 +88,14 @@ color:white;
 @media (max-width:1400px){
   width:100%;
   gap:40px;
-  align-items:flex-end;
+  align-items:center;
   grid-template-columns: 1fr 1fr;
   grid-template-rows:1fr;
 };
 @media (max-width:900px){
   width:100%;
   gap:40px;
-  align-items:flex-end;
+  align-items:center;
   grid-template-columns: 1fr;
   grid-template-rows:1fr 1fr;
 }
