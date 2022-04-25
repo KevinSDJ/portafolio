@@ -126,6 +126,17 @@ const Content = styled.div`
     font-size:calc(1.5vw);
     letter-spacing:calc(1vw);
   }
+  @media (max-width:2400px){
+    h2{
+      font-size:30px;
+    };
+    &>p{
+    word-wrap: break-word;
+    font-family:"Open Sans",sans-serif;
+     font-weight: 600;
+    font-size:calc(24px);
+  };
+	};
   @media (max-width:1400px){
     h2{
       font-size:28px;
@@ -153,7 +164,7 @@ const Content = styled.div`
     &>p{
     word-wrap: break-word;
     font-family:"Open Sans",sans-serif;
-    font-size:calc(20px);
+    font-size:calc(18px);
   };
 	};
 	@media (max-width:570px){
@@ -163,7 +174,7 @@ const Content = styled.div`
     &>p{
     word-wrap: break-word;
     font-family:"Open Sans",sans-serif;
-    font-size:calc(18px);
+    font-size:calc(14px);
   };
 	};
 `
