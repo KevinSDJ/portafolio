@@ -11,7 +11,7 @@ export default function Sphere(props) {
       {...props}
        >
       <sphereGeometry args={[1, 8, 8]} />
-      <meshBasicMaterial wireframe={true} opacity={0}  />
+      <meshBasicMaterial wireframe={true} opacity={0} transparent={true} />
     </mesh>
   )
 }
