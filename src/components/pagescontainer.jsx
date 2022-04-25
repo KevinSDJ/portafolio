@@ -7,6 +7,7 @@ import Projects from './../pages/projects.jsx';
 import Contact from './../pages/contact.jsx';
 import Nav from "./nav.jsx";
 import LogoIcon from './logo.jsx'
+import {NotfyVersion} from './vrsion.jsx';
 import {Triangle,Tri} from './triangle.jsx'
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -31,6 +32,9 @@ export default function PagesContainer() {
   return (
     <PgContainer id="pgContainer"ref={conteiner}>
       <LogoIcon/>
+      <NotfyVersion>
+        {"V1.2"}
+      </NotfyVersion>
       <Tri/>
       <Nav />
       <Initial />

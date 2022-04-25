@@ -84,6 +84,7 @@ const FooterSection = styled.footer`
 	font-family: "Roboto",sans-serif;
 }
 @media (max-width:2400px){
+	padding-top:50px;
 	height:250px;
 	p{
 	 font-size: 20px;
@@ -115,6 +116,7 @@ const FooterSection = styled.footer`
 
 
 @media (max-width:1400px){
+	padding-top:30px;
 	height:200px;
 	p{
 	 font-size: 18px;
@@ -144,6 +146,7 @@ const FooterSection = styled.footer`
 	}
 };
 @media (max-width:1200px){
+	padding-top:20px;
     height:200px;
 	p{
 	 font-size: 18px;
