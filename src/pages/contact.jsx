@@ -72,19 +72,122 @@ const FooterSection = styled.footer`
 &>p{
 	text-align: center;
 }
+@media (max-width:2400px){
+	height:250px;
+	p{
+	 font-size: 20px;
+	 margin:0;
+    };
+    #perfilData{
+		width: 90%;	
+		&>div{
+			h3{
+				font-size: 24px;
+				margin:5px 0;
+			}
+			h2{
+				font-size: 24px;
+				margin:5px 0;
+			}
+			p{
+				font-size:18px;
+				margin:10px 0;
+			}
+			span{
+				a{
+				   font-size:24px
+				}
+			}
+		}
+	}
+}
 
 
 @media (max-width:1400px){
-   
+	height:200px;
+	p{
+	 font-size: 18px;
+	 margin:0;
+    };
+    #perfilData{
+		width: 90%;	
+		&>div{
+			h3{
+				font-size: 24px;
+				margin:5px 0;
+			}
+			h2{
+				font-size: 24px;
+				margin:5px 0;
+			}
+			p{
+				font-size:16px;
+				margin:10px 0;
+			}
+			span{
+				a{
+				   font-size:20px
+				}
+			}
+		}
+	}
 };
 @media (max-width:1200px){
-    
+    height:200px;
+	p{
+	 font-size: 18px;
+	 margin:0;
+    };
+    #perfilData{
+		width: 90%;	
+		&>div{
+			h3{
+				font-size: 18px;
+			}
+			h2{
+				font-size: 18px;
+			}
+			p{
+				font-size:12px;
+				margin:5px 0;
+			}
+			span{
+				a{
+				   font-size:16px
+				}
+			}
+		}
+	}
 };
 @media (max-width:900px){
-	
+	height:180px;
+	p{
+	 font-size: 14px;
+	 margin:0;
+    };
+    #perfilData{
+		width: 90%;	
+		&>div{
+			h3{
+				font-size: 14px;
+			}
+			h2{
+				font-size: 14px;
+			}
+			p{
+				font-size:12px;
+				margin:5px 0;
+			}
+			span{
+				a{
+				   font-size:16px
+				}
+			}
+		}
+	}
 };
 @media (max-width:570px){
-	height:100px;
+	height:150px;
 	p{
 	 font-size: 14px;
     };
