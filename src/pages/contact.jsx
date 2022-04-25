@@ -69,9 +69,9 @@ const FooterSection = styled.footer`
 			}
 	  }
   }
-  &>p{
+&>p{
 	text-align: center;
-  }
+}
 
 
 @media (max-width:1400px){
@@ -85,6 +85,9 @@ const FooterSection = styled.footer`
 };
 @media (max-width:570px){
 	height:200px;
+	&>p{
+	 font-size: 14px;
+    };
     #perfilData{
 		width: 90%;	
 		&>div{
