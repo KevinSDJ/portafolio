@@ -48,7 +48,7 @@ const FooterSection = styled.footer`
   width:100%;
   height:300px;
   margin:0 auto;
-  border:1px solid gray;
+  background-color: rgba(211, 211, 211, 0.2);
   color:white;
   #perfilData{
 	  display: grid;
@@ -82,6 +82,7 @@ const FooterSection = styled.footer`
   }
 &>p{
 	text-align: center;
+	font-family: "Roboto",sans-serif;
 }
 @media (max-width:2400px){
 	height:250px;
@@ -297,7 +298,7 @@ export default function Contact() {
 						<Perfil />
 					</div>
 				</div>
-				<p>copry </p>
+				<p>Ⓒ2022 - Designed and Developed With 💛</p>
 			</FooterSection>
 		</FlexLayout>
 	</Section>)

@@ -21,8 +21,11 @@ const FlexLayout = styled.div`
    justify-content:flex-end;
    margin:0 auto;
    backdrop-filter:blur(5px);
+   @media (max-width:900px){
+     gap: calc(8vh) 0;
+   };
    @media (max-width:570px){
-     gap: 50px 0;
+     gap: calc(5vh) 0;
    };
  `;
 let GridLayout= styled.div`
