@@ -19,8 +19,10 @@ const FlexLayout = styled.div`
    flex-direction:column;
    justify-content:flex-end;
    margin:0 auto;
-   gap:20px 0; 
    backdrop-filter:blur(5px);
+   @media (max-width:570px){
+     gap: 50px 0;
+   };
  `;
 let GridLayout= styled.div`
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap');
