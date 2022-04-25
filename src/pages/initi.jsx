@@ -121,7 +121,7 @@ export default function Initial() {
           <p ref={subt} >Full Stack Web Developer | Front End</p>
           <span>
              <BasisButton ref={btn} href={"#contact"}>contact me</BasisButton>
-             <BasisButton ref={btn2} href={pdf} target="_blank" rel="noopener noreferrer" download="fullstack_developer_kevin_de_jesus_cv.pdf"   color={"#bb3e03"} animateName={"pulse2"} >cv download <FaFileDownload style={{color:"#bb3e03"}}/></BasisButton>
+             <BasisButton ref={btn2} href={pdf} target="_blank" rel="noopener noreferrer" download="fullstack_developer_kevin_de_jesus_cv.pdf"   color={"#bb3e03"} animateName={"pulse2"} >resume<FaFileDownload style={{color:"#bb3e03"}}/></BasisButton>
           </span>
       </Content>
     </Section>

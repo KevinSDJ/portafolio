@@ -15,15 +15,17 @@ const FlexLayout = styled.div`
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap');
    width:100%;
    color:#fff;
+   height: 100vh;
    display:flex;
    flex-direction:column;
-   justify-content:space-around;
+   justify-content:flex-end;
    margin:0 auto;
+   gap:20px 0; 
    backdrop-filter:blur(5px);
  `;
 let GridLayout= styled.div`
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap');
-    diplay:grid;
+    display:grid;
     height:auto;
     display:grid;
     justify-items:center;
@@ -151,7 +153,7 @@ const Content = styled.div`
 	};
 	@media (max-width:570px){
 	  h2{
-      font-size:24px;
+      font-size:20px;
     };
     &>p{
     word-wrap: break-word;

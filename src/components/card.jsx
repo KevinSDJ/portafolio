@@ -21,7 +21,8 @@ const Content = styled.div`
    #source_view_code{
       overflow:hidden;
    	  position:absolute;
-   	  left:0;
+   	  left: 0;
+      right: 0;
    	  backdrop-filter:blur(10px);
    	  #btngroups{
    	  	display:flex;

@@ -51,7 +51,7 @@ const Content=styled.div`
    @media (max-width:570px){
      
     &>h2{
-      font-size:calc(4vw);
+      font-size:28px;
     };
      .swiper{
       width:100%;

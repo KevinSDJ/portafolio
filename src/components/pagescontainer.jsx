@@ -20,6 +20,7 @@ const PgContainer = styled.div`
   width: 100%;
   height:auto;
   overflow:hidden;
+  scroll-behavior: smooth;
 `;
 
 export default function PagesContainer() {

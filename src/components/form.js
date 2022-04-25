@@ -10,6 +10,16 @@ const Form = styled.form`
    flex-direction:column;
    align-items:center;
    gap:10px;
+   label{
+      input:focus{
+        outline: none;
+        background-color:rgb(180, 210, 238);
+      };
+      textarea:focus{
+         outline: none;
+        background-color:rgb(180, 210, 238);
+      }
+   }
    @media (max-width:900px){
       width:90%;
       
