@@ -84,7 +84,7 @@ const FooterSection = styled.footer`
 	
 };
 @media (max-width:570px){
-	height:150px;
+	height:100px;
 	p{
 	 font-size: 14px;
     };
