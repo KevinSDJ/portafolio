@@ -1,9 +1,9 @@
 import { useState, useRef } from 'react';
 import styled from 'styled-components';
 import { Section, FlexLayout } from './../components/containers/containers.js'
-import { RiChatSmile3Fill, RiSendPlaneFill,RiGithubFill,RiLinkedinBoxFill} from 'react-icons/ri';
-import {HiLocationMarker} from 'react-icons/hi';
-import {FaPhoneSquareAlt} from 'react-icons/fa';
+import { RiChatSmile3Fill, RiSendPlaneFill, RiGithubFill, RiLinkedinBoxFill } from 'react-icons/ri';
+import { HiLocationMarker } from 'react-icons/hi';
+import { FaPhoneSquareAlt } from 'react-icons/fa';
 import { ButtonsForm } from './../components/buttons/buttons.js'
 import { Form } from './../components/form.js'
 import { VITE_APP_SERVICE_ID, VITE_APP_TEMPLATE_ID, VITE_APP_PUBLIC_KEY } from './../data/env.js'
@@ -58,10 +58,54 @@ const FooterSection = styled.footer`
 	  width: 70%;
 	  height: auto;
 	  margin:0 auto;
+	  &>div{
+		span{
+			display:flex;
+			gap:0 10px;
+				a{
+					text-decoration: none;
+					color:white;
+				}
+			}
+	  }
   }
   &>p{
 	text-align: center;
   }
+
+
+@media (max-width:1400px){
+   
+};
+@media (max-width:1200px){
+    
+};
+@media (max-width:900px){
+	
+};
+@media (max-width:570px){
+	height:200px;
+    #perfilData{
+		width: 90%;	
+		&>div{
+			h3{
+				font-size: 18px;
+			}
+			h2{
+				font-size: 16px;
+			}
+			p{
+				font-size:14px;
+			}
+			span{
+				a{
+				   font-size:16px
+				}
+			}
+		}
+	}
+
+};
 `
 
 export default function Contact() {
@@ -81,7 +125,7 @@ export default function Contact() {
 
 	const handleSubmit = async (e) => {
 		e.preventDefault()
-		
+
 		let resp = await emailjs.sendForm(VITE_APP_SERVICE_ID, VITE_APP_TEMPLATE_ID, form.current, VITE_APP_PUBLIC_KEY)
 		alert(resp)
 		setData({ name: "", issue: "", message: "", reply_to: "" })
@@ -122,12 +166,12 @@ export default function Contact() {
 					<div>
 						<h3>Kevin Sebastian De jesus</h3>
 						<h2>INFO</h2>
-						<p><HiLocationMarker/> Resistencia,Chaco,Argentina</p>
-						<p><FaPhoneSquareAlt/>+5493624315169</p>
-						<span><a href='https://www.linkedin.com/in/kevin-sebastian-de-jesus/' target={'_blank'}><RiLinkedinBoxFill/></a><a href='https://github.com/KevinSDJ' target={'_blank'}><RiGithubFill/></a></span>
+						<p><HiLocationMarker /> Resistencia,Chaco,Argentina</p>
+						<p><FaPhoneSquareAlt />+5493624315169</p>
+						<span><a href='https://www.linkedin.com/in/kevin-sebastian-de-jesus/' target={'_blank'}><RiLinkedinBoxFill /></a><a href='https://github.com/KevinSDJ' target={'_blank'}><RiGithubFill /></a></span>
 					</div>
 					<div>
-						<Perfil/>
+						<Perfil />
 					</div>
 				</div>
 				<p>copry </p>
