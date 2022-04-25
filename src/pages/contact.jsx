@@ -89,13 +89,15 @@ const FooterSection = styled.footer`
 		width: 90%;	
 		&>div{
 			h3{
-				font-size: 18px;
+				font-size: 14px;
 			}
 			h2{
-				font-size: 16px;
+				font-size: 14px;
+				margin:2px 0;
 			}
 			p{
-				font-size:14px;
+				font-size:10px;
+				margin:2px 0;
 			}
 			span{
 				a{
