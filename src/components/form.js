@@ -10,6 +10,7 @@ const Form = styled.form`
    align-items:center;
    gap:10px;
    label{
+      
       input:focus{
         outline: none;
         background-color:rgb(180, 210, 238);
@@ -19,6 +20,25 @@ const Form = styled.form`
         background-color:rgb(180, 210, 238);
       }
    }
+   @media (max-width:2400px){
+   
+      label{
+         font-size:20px;
+         input{
+           padding:5px;
+           font-size:20px
+         };
+      }
+   };
+
+   @media (max-width:1400px){
+      width:70%;
+      label{
+         input{
+           padding:5px;
+         };
+      }
+   };
    @media (max-width:900px){
       width:90%;
       
@@ -33,6 +53,10 @@ const Form = styled.form`
    	flex-direction:column;
    	gap:5px;
    };
+   &>button{
+      font-weight: 700;
+      font-size:1em;
+   }
    &>button:hover{
    	svg{
    		transform:rotate(45deg);
