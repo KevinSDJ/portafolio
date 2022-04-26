@@ -11,7 +11,6 @@ let Section = styled.section`
   justify-content: center;
   align-items:center;
   backdrop-filter: blur(5px);
-  border: 1px solid gray;
 `;
 const FlexLayout = styled.div`
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap');
@@ -72,7 +71,6 @@ height:80%;
 justify-items:center;
 font-family:"Open Sans",sans-serif;
 color:white;
-border:1px solid gray;
 @media (max-width:2400px){
   width:95%;
   align-items:center;
