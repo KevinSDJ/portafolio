@@ -4,6 +4,7 @@ let Section = styled.section`
   position:relative;
   width: 100%;
   height:100vh;
+  box-sizing:border-box;
   background-color: transparent;
   display: flex;
   flex-direction: column;
@@ -86,21 +87,20 @@ border:1px solid gray;
 };
 @media (max-width:1400px){
   width:100%;
-  gap:40px;
+
   align-items:center;
   grid-template-columns: 1fr 1fr;
   grid-template-rows:1fr;
 };
 @media (max-width:900px){
   width:100%;
-  gap:40px;
+
   align-items:center;
   grid-template-columns: 1fr;
   grid-template-rows:1fr 1fr;
 }
 @media (max-width:570px){
   width:100%;
-  gap:40px;
   align-items:flex-end;
   grid-template-columns: 1fr;
   grid-template-rows:1fr 1fr;
@@ -125,21 +125,21 @@ const Content = styled.div`
     h2{
       font-size:28px;
     }
-    p{
+    &>p{
     word-wrap: break-word;
     font-family:"Open Sans",sans-serif;
-     font-weight: 600;
-    font-size:calc(20px);
-  };
+    font-weight: 600;
+    font-size:16px;
+    };
 	};
   @media (max-width:1400px){
     h2{
       font-size:28px;
     };
-    p{
+    &>p{
     word-wrap: break-word;
     font-family:"Open Sans",sans-serif;
-    font-size:20px;
+    font-size:16px;
   };
 	};
   @media (max-width:1200px){
@@ -149,7 +149,7 @@ const Content = styled.div`
     &>p{
     word-wrap: break-word;
     font-family:"Open Sans",sans-serif;
-    font-size:18px;
+    font-size:16px;
   };
 	};
 	@media (max-width:900px){
@@ -159,7 +159,7 @@ const Content = styled.div`
     &>p{
     word-wrap: break-word;
     font-family:"Open Sans",sans-serif;
-    font-size:18px;
+    font-size:17px;
   };
 	};
 	@media (max-width:570px){

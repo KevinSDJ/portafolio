@@ -4,12 +4,15 @@ const Form = styled.form`
    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap');
    margin:0 auto;
    font-family:"Open Sans",sans-serif;
-   width:40%;
    display:flex;
    flex-direction:column;
    align-items:center;
    gap:10px;
    label{
+      display:flex;
+   	width:100%;
+   	flex-direction:column;
+   	gap:5px;
       input:focus{
         outline: none;
         background-color:rgb(180, 210, 238);
@@ -18,48 +21,53 @@ const Form = styled.form`
          outline: none;
         background-color:rgb(180, 210, 238);
       }
+
+   }
+   &>button{
+      font-weight: 700;
+      font-size:1em;
+      &:hover{
+         svg{
+   		transform:rotate(45deg);
+   	  }
+      }
    }
    @media (max-width:2400px){
+      width:30%;
       label{
          font-size:20px;
          input{
            padding:5px;
-           font-size:20px
+           font-size:16px
          };
       }
    };
 
    @media (max-width:1400px){
-      width:70%;
+      width:50%;
       label{
+         font-size:16px;
          input{
            padding:5px;
+           font-size:12px
          };
       }
    };
    @media (max-width:900px){
-      width:90%;
-      
+      width:70%;
+      label{
+         font-size:16px;
+         input{
+           padding:5px;
+           font-size:12px
+         };
+      }
    };
    @media (max-width:570px){
       width:100%;
       
    };
-   &>label{
-   	display:flex;
-   	width:100%;
-   	flex-direction:column;
-   	gap:5px;
-   };
-   &>button{
-      font-weight: 700;
-      font-size:1em;
-   }
-   &>button:hover{
-   	svg{
-   		transform:rotate(45deg);
-   	}
-   };
+   
 `
 
 

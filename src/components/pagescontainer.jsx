@@ -15,8 +15,8 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.defaults({ease:'bounce',duration:1})
 
 const PgContainer = styled.div`
-  display:block;
-  box-sizing:border-box;
+  display:inline-block;
+  box-sizing:content-box;
   background-color: black;
   width: 100%;
   height:auto;
