@@ -102,25 +102,8 @@ let CardData= styled.div`
       margin:0;
     }
    };
-   @media (max-width:1400px){
-    h2{
-      font-size:24px;
-    };
-    p{
-      font-size:17px;
-      height: 80px;
-    };
-    span{
-     &>b{
-       font-size:17px;
-     };
-     &>p{
-       font-size:17px;
-     }
-
-    };
-  };
-   @media (max-width:900px){
+  
+   @media (max-width:2400px){
     h2{
       font-size:20px;
     };

@@ -4,10 +4,10 @@ const scene = new THREE.Scene({
 		});
 		
 		const camera = new THREE.PerspectiveCamera(
-		                                           60,
+		                                           75,
 		                                           canvas.current.clientWidth/canvas.current.clientHeight,
-		                                           0.4,
-		                                           100
+		                                           2,
+		                                           300
 		                                           );
 		const canvas=document.querySelector('.scene3d')
 		scene.add(camera);

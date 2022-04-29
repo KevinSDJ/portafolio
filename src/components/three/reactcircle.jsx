@@ -10,8 +10,8 @@ export default function Electron (props){
 		
 		let t= clock.getElapsedTime()
 		let op={
-			cos:Math.cos(2*t),
-			sin:Math.sin(2*t)
+			cos:Math.cos(1*t),
+			sin:Math.sin(1*t)
 		}
 		current.current.position.x= op[props.op[0]] * props.values[0];
 		current.current.position.y= op[props.op[1]] * props.values[1];
@@ -23,8 +23,8 @@ export default function Electron (props){
 	        {...props}
 	          ref={current}
 	        >
-	        <sphereGeometry args={[0.2, 32, 24]} />
-	        <meshMatcapMaterial matcap={matcaps[props.icon]}  />
+	        <sphereGeometry args={[0.3, 32, 24]}  />
+	        <meshMatcapMaterial matcap={matcaps[props.icon]}  transparent={true}/>
 	        </mesh>
 	        )
 

@@ -4,7 +4,8 @@ import r from './icons8-react-480.png'
 import h from './icons8-html-5.svg';
 import css from './icons8-css3.svg'
 import sql from './sequelizejs-icon.svg'; 
-import ex from './express.svg'
+import ex from './express.png'
+import npm from  './icons8-ngp.svg'
 import dck from './icons8-estibador.svg';
 import ptg from './icons8-postgresql.svg';
 
@@ -19,6 +20,7 @@ let matcaps={
 	express:texture.load(ex),
 	docker:texture.load(dck),
 	postgres:texture.load(ptg),
+	npm:texture.load(npm)
 }
 
 

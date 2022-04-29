@@ -34,9 +34,20 @@ const Content=styled.div`
    	width:calc(40vh);
    	height:calc(40vh + 15vh);
    };
+    @media (max-width:2400px){
+    &>h2{
+      font-size:26px;
+    };
+     
+     .swiper-slide{
+      overflow:hidden;
+      width:270px;
+      height:350px;
+     }
+   };
    @media (max-width:900px){
     &>h2{
-      font-size:calc(3vw);
+      font-size:26px;
     };
      .swiper{
       width:100%;
@@ -50,7 +61,7 @@ const Content=styled.div`
    @media (max-width:570px){
      
     &>h2{
-      font-size:28px;
+      font-size:26px;
     };
      .swiper{
       width:100%;

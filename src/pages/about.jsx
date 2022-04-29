@@ -11,7 +11,7 @@ export default function About() {
         I discovered programming more than a year ago, as I always liked technology, I was instantly hooked, it was difficult, a real challenge for me, but I didn't give up because despite everything I liked it, I gave my best effort to learn how to work team up. I like to help, learn from others, I want to continue building things and be able to share it with others.
          </p>
       </Content>
-      <Escena/>
+      
     </GridLayout2>
   </Section>)
 }

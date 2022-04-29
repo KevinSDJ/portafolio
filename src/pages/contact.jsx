@@ -45,7 +45,7 @@ const MailSection = styled.div`
 const FooterSection = styled.footer`
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap');
   width:100%;
-  height:300px;
+  height:200px;
   margin:0 auto;
   background-color: rgba(211, 211, 211, 0.2);
   color:white;
@@ -83,50 +83,21 @@ const FooterSection = styled.footer`
 	text-align: center;
 	font-family: "Roboto",sans-serif;
 }
+
+
+
 @media (max-width:2400px){
-	padding-top:50px;
-	height:250px;
+	padding-top:10px;
+	height:180px;
 	p{
-	 font-size: 20px;
+	 font-size: 16px;
 	 margin:0;
     };
     #perfilData{
 		width: 90%;	
 		&>div{
 			h3{
-				font-size: 24px;
-				margin:5px 0;
-			}
-			h2{
 				font-size: 20px;
-				margin:5px 0;
-			}
-			p{
-				font-size:18px;
-				margin:10px 0;
-			}
-			span{
-				a{
-				   font-size:24px
-				}
-			}
-		}
-	}
-}
-
-
-@media (max-width:1400px){
-	padding-top:30px;
-	height:200px;
-	p{
-	 font-size: 18px;
-	 margin:0;
-    };
-    #perfilData{
-		width: 90%;	
-		&>div{
-			h3{
-				font-size: 24px;
 				margin:5px 0;
 			}
 			h2{
@@ -139,7 +110,7 @@ const FooterSection = styled.footer`
 			}
 			span{
 				a{
-				   font-size:20px
+				   font-size:24px
 				}
 			}
 		}
